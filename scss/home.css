@@ -1,0 +1,128 @@
+.clear-nav {
+  background-color: white; }
+
+.section {
+  background-color: #fafafa; }
+
+.clear-nav a {
+  color: #616161; }
+
+.sun-size {
+  width: 50%; }
+
+.card-bottom {
+  padding-bottom: 8%;
+  padding-left: 8%;
+  padding-right: 8%; }
+
+.card-top {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border-bottom: #d4d4d4 solid 1px; }
+
+.footerWrapper a {
+  color: #616161; }
+
+.primary {
+  background-color: #039be5; }
+
+.padded {
+  padding-left: 60%; }
+
+.pt2 {
+  padding-top: 16%; }
+
+.pt1 {
+  padding-top: 8%; }
+
+.mgn1 {
+  margin: 8%; }
+
+.mtb {
+  margin-top: 4%;
+  margin-bottom: 4%; }
+
+.centerContainer {
+  height: 10em;
+  position: relative; }
+
+.centerElement {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+.borderud {
+  border-top: #dfdfdf solid 1px;
+  border-bottom: #dfdfdf solid 1px; }
+
+.mediano {
+  font-size: 3rem; }
+
+.col-content {
+  padding: 8%;
+  width: 98%; }
+
+.iconCover {
+  font-size: 48px; }
+
+/*Rotating animation */
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.rotating {
+  -webkit-animation: rotating 8s linear infinite;
+  -moz-animation: rotating 8s linear infinite;
+  -ms-animation: rotating 8s linear infinite;
+  -o-animation: rotating 8s linear infinite;
+  animation: rotating 8s linear infinite; }
+
+/* Hover animation */
+.icon-section i {
+  font-size: 3rem;
+  color: #039be5; }
+
+.icon-hover i, .icon-hover h5 {
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out; }
+
+.icon-hover .card-top {
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out; }
+
+.icon-hover:hover i, .icon-hover:hover h5 {
+  color: white;
+  cursor: pointer; }
+
+.icon-hover:hover .card-top {
+  background-color: #039be5;
+  cursor: pointer; }
+
+/*# sourceMappingURL=home.css.map */

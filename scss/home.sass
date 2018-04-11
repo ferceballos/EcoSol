@@ -1,0 +1,141 @@
+$primary: #039be5 !default
+$rotationDelay: 8s !default
+$hoverCardsDelay: 0.2s !default
+
+// Components
+.clear-nav
+    background-color: white
+
+.section 
+    background-color: #fafafa
+
+.clear-nav a 
+    color: #616161
+
+.sun-size 
+    width: 50%
+
+.card-bottom 
+    padding-bottom: 8%
+    padding-left: 8%
+    padding-right: 8%
+
+.card-top 
+    padding-top: 2%
+    padding-bottom: 2%
+    padding-left: 8%
+    padding-right: 8%
+    border-bottom: rgb(212, 212, 212) solid 1px
+
+.footerWrapper a 
+    color: #616161
+
+//Colors
+.primary
+    background-color: $primary
+
+//Paddings and margins
+.padded 
+    padding-left: 60%
+
+.pt2 
+    padding-top: 16%
+
+.pt1 
+    padding-top: 8%
+
+.mgn1 
+    margin: 8%
+
+.mtb 
+    margin-top: 4%
+    margin-bottom: 4%
+
+
+//Tools
+.centerContainer 
+    height: 10em
+    position: relative
+
+.centerElement 
+    margin: 0
+    position: absolute
+    top: 100%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+
+.borderud 
+    border-top: rgb(223, 223, 223) solid 1px
+    border-bottom: rgb(223, 223, 223) solid 1px
+
+//Sizes
+.mediano 
+    font-size: 3rem
+
+.col-content 
+    padding: 8%
+    width: 98%
+
+.iconCover 
+    font-size: 48px
+
+//Animations
+/*Rotating animation*/
+@-webkit-keyframes rotating
+    from 
+        -webkit-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+    
+    to 
+        -webkit-transform: rotate(360deg)
+        -o-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+@keyframes rotating 
+    from 
+        -ms-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -webkit-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+    
+    to 
+        -ms-transform: rotate(360deg)
+        -moz-transform: rotate(360deg)
+        -webkit-transform: rotate(360deg)
+        -o-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+.rotating 
+    -webkit-animation: rotating $rotationDelay linear infinite
+    -moz-animation: rotating $rotationDelay linear infinite
+    -ms-animation: rotating $rotationDelay linear infinite
+    -o-animation: rotating $rotationDelay linear infinite
+    animation: rotating $rotationDelay linear infinite
+
+/* Hover animation */
+.icon-section i 
+    font-size: 3rem
+    color: $primary
+
+.icon-hover i, .icon-hover h5 
+    -webkit-transition: color $hoverCardsDelay ease-out
+    -moz-transition: color $hoverCardsDelay ease-out
+    -o-transition: color $hoverCardsDelay ease-out
+    transition: color $hoverCardsDelay ease-out
+
+.icon-hover .card-top 
+    -webkit-transition: background-color $hoverCardsDelay ease-out
+    -moz-transition: background-color $hoverCardsDelay ease-out
+    -o-transition: background-color $hoverCardsDelay ease-out
+    transition: background-color $hoverCardsDelay ease-out
+
+.icon-hover:hover i, .icon-hover:hover h5 
+    color: white
+    cursor: pointer
+
+.icon-hover:hover .card-top 
+    background-color: $primary
+    cursor: pointer
