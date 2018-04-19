@@ -7,14 +7,14 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="scss/home.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <header>
-        <nav class="theme z-depth-0">
+        <nav class="clear-nav z-depth-0">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">Logo</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -34,26 +34,59 @@
 
 
     <main>
-        <img class="coverpicture circled rotating" src="img/sunny.png">
+        <div name="productsHead" class=" center-align">
+            <h3 class="grey-text text-darken-3 ">La mejor calidad del mercado</h3>
+            <h6 class="grey-text text-darken-3 light">Mire nuestros productos de primer nivel</h6>
+            <img src="img/equipment.png" class="centerImage responsive-img" alt="">
+        </div>
 
-        <div class="row white">
-            <div class="container valign-wrapper">
-                <div class="col s12 m6">
-                    <div class="caption left-align">
-                        <h4 class="white-text">Use la energía del sol</h4>
-                        <p class="light grey-text text-lighten-3">Empiece a usar energía limpia y deje de gastar en electricidad</p>
-                        <a class="waves-effect waves-light btn">Ver Productos</a>
+        <div name="solar-panels" class="row container mtb">
+            <h4 class="col s12 light grey-text text-darken-2">Páneles Solares</h4>
+            <p class="col s12">Algo bonito sobre los páneles solares</p>
+
+            <div class="col s12 m6 l3 crop mb1">
+                <img class="panel1 materialboxed img" data-caption="A picture of a way with a group of trees in a park" width="250" src="img/paneles/1.jpeg">
+            </div>
+
+            <div class="col s12 m6 l3 crop mb1">
+                <img class="panel2 materialboxed img" data-caption="A picture of a way with a group of trees in a park" width="250" src="img/paneles/2.jpeg">
+            </div>
+
+            <div class="col s12 m6 l3 crop mb1">
+                <img class="panel3 materialboxed img" data-caption="A picture of a way with a group of trees in a park" width="250" src="img/paneles/3.jpg">
+            </div>
+
+            <div class="col s12 m6 l3 crop mb1">
+                <img class="panel    materialboxed img" data-caption="A picture of a way with a group of trees in a park" width="250" src="img/paneles/4.jpg">
+            </div>
+        </div>
+
+        <div name="solar-panels" class="row container mtb">
+            <h4 class="col s12 light grey-text text-darken-2">Calentadores Solares</h4>
+            <p class="col s12">Algo bonito sobre los páneles solares</p>
+
+            <div class="col s12 crop mb1">
+                <div class="col s6">
+                    <h5 class="light grey-text text text-darken-2">Nombre del producto</h5>
+                    <div class="chip">
+                        <img src="https://4.bp.blogspot.com/-TjncPpmurG4/WK5qlqe66xI/AAAAAAAAZgA/trgl1Rp5nPk-EYtBDZ1sin31WqMsQzM0ACLcB/s1600/Chinchilla-cameron-adorable%2B%252812%2529.jpg" alt="Contact Person"> Calentador Solar
+                    </div>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quasi ipsum tenetur. Itaque, neque fugit! Explicabo nesciunt nemo rerum doloremque, fugit saepe exercitationem officiis? Saepe illum illo quas dolores sit?</p>
                     </div>
                 </div>
+                <div class="col s6">
+                
+                <img class="panel4 materialboxed img circle" data-caption="A picture of a way with a group of trees in a park" width="250" src="img/paneles/4.jpg">
 
-                <div class="col s0 m6">
                 </div>
             </div>
+
         </div>
     </main>
 
     <footer>
-        <footer class="page-footer teal theme">
+        <footer class="page-footer primary">
             <div class="container">
                 <div class="row footerWrapper">
                     <div class="col l6 s12">
@@ -88,6 +121,11 @@
         </footer>
     </footer>
 
+
+
+    <script>
+
+    </script>
 
     <script src="js/jquery.js"></script>
     <!--JavaScript at end of body for optimized loading-->

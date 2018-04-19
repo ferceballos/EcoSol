@@ -1,0 +1,14 @@
+solar center
+
+luminasol
+
+energon solar
+    como funcionan los paneles solares??
+
+solariseco.com
+
+conermex
+
+exelsolar
+
+browser-sync start --server --files "css/*.css, ./*.html, *.html, js/*.js"
