@@ -11,4 +11,4 @@ conermex
 
 exelsolar
 
-browser-sync start --server --files "css/*.css, ./*.html, *.html, js/*.js"
+browser-sync start --server --files "css/*.css, scss/*.css , ./*.html, *.html, js/*.js"

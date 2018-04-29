@@ -26,4 +26,4 @@ var elem = document.querySelector('.panel5');
 var instance = M.Materialbox.init(elem, {});
 
 var elem = document.querySelector('.dropdown-trigger');
-var instance = M.Dropdown.init(elem, {});
+var instance = M.Dropdown.init(elem, { alignment: 'left', constrainWidth: false, coverTrigger: false, hover: true });

@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
     <link rel="stylesheet" href="scss/home.css">
+    <link rel="stylesheet" href="scss/rotate.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -22,7 +23,7 @@
                         <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="nosotros.html">Nosotros</a>
+                        <a href="badges.html">Nosotros</a>
                     </li>
                     <li>
                         <a class='dropdown-trigger' href='#' data-target='dropdown1'>Productos</a>
@@ -36,10 +37,13 @@
                         <li>
                             <a href="#!">Inversores</a>
                         </li>
+                        <li class="divider" tabindex="-1"></li>
                         <li>
                             <a href="#!">Calentadores solares</a>
                         </li>
                     </ul>
+
+
                     <li>
                         <a href="#!">Contacto</a>
                     </li>
@@ -48,44 +52,26 @@
         </nav>
     </header>
 
+
     <main>
-        <div name="slider" class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="img/center.jpg">
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/left.jpg">
-                    <div class="caption left-align">
-                        <h3>Left Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/right.jpg">
-                    <div class="caption right-align">
-                        <h3>Right Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/left2.jpg">
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-            </ul>
+        <div class="row container slider blue">
+            <div class="col s12 m6" style="padding: 10%">
+                <img class="sun-size goingAround" src="img/sunny.png">
+            </div>
+
+            <div class="col s12 m6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo odit possimus alias culpa reiciendis
+                    sequi ad perspiciatis impedit! Enim porro beatae quaerat assumenda blanditiis autem maiores rem nemo
+                    repellendus.
+                </p>
+            </div>
         </div>
 
         <div name="benefits" class="row container mtb">
             <h4 class="col s12 light grey-text text-darken-2">Beneficios de nuestros productos</h4>
+
             <div class="col s12 m6 l3">
-                <div class="card small icon-hover hoverable">
+                <div class="card icon-hover hoverable">
                     <div>
                         <div class="card-top">
                             <i class="material-icons pt1 mediano">wb_sunny</i>
@@ -96,11 +82,12 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ratione similique sit vel nobis suscipit
                             nesciunt totam eveniet ex modi, consequatu</p>
                     </div>
+
                 </div>
             </div>
 
             <div class="col s12 m6 l3">
-                <div class="card small icon-hover hoverable">
+                <div class="card icon-hover hoverable">
                     <div>
                         <div class="card-top">
                             <i class="material-icons pt1 mediano">attach_money</i>
@@ -111,11 +98,12 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ratione similique sit vel nobis suscipit
                             nesciunt totam eveniet ex modi, consequatu</p>
                     </div>
+
                 </div>
             </div>
 
             <div class="col s12 m6 l3">
-                <div class="card small icon-hover hoverable">
+                <div class="card icon-hover hoverable">
                     <div>
                         <div class="card-top">
                             <i class="material-icons pt1 mediano">power</i>
@@ -126,11 +114,12 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ratione similique sit vel nobis suscipit
                             nesciunt totam eveniet ex modi, consequatu</p>
                     </div>
+
                 </div>
             </div>
 
             <div class="col s12 m6 l3">
-                <div class="card small icon-hover hoverable">
+                <div class="card icon-hover hoverable">
                     <div>
                         <div class="card-top">
                             <i class="material-icons pt1 mediano">flag</i>
@@ -147,21 +136,26 @@
 
         <div name="sun-separator" class="row section borderud">
             <div class="container row valign-wrapper">
+
                 <div class="col hide-on-small-only  m2"></div>
                 <div class="col s12 m4">
                     <img class="sun-size m1 rotating" src="img/sunny.png">
                 </div>
+
                 <div class="col s12 m6 mtb">
                     <div class="caption left-align">
                         <h4 class="grey-text text-darken-3">Use la energía del sol</h4>
                         <h5 class="light grey-text text-darken-4">La energía limpia reduce las emisiones de carbono, empiece a usar energía natural</h5>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
         <div name="questions" class="row container mtb">
             <h4 class="col s12 light grey-text text-darken-2">Preguntas frecuentes</h4>
+
             <div class="col s12 m6">
                 <ul class="collapsible">
                     <li>
@@ -186,8 +180,10 @@
                         </div>
                     </li>
                 </ul>
+
             </div>
             <div class="col s12 m6">
+
                 <ul id="collapsibleTwo" class="collapsible">
                     <li>
                         <div class="collapsible-header">
@@ -211,6 +207,7 @@
                         </div>
                     </li>
                 </ul>
+
             </div>
         </div>
 
@@ -221,9 +218,11 @@
                     <p>Watch our products.</p>
                     <a class="waves-effect waves-light btn primary" href="products.html">Ver Productos</a>
                 </div>
+
                 <div class="col s12 m6">
                     <img src="img/equipment.png" class="responsive-img">
                 </div>
+
             </div>
         </div>
 
@@ -274,13 +273,15 @@
     </footer>
 
 
-    <!-- JavaScript frameworks used -->
-    <script src="js/jquery.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/anime.min.js"></script>
 
-    <!-- Own JavaScript files -->
+    <script>
+
+    </script>
+
+    <script src="js/jquery.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/materialize.min.js"></script>
     <script src="js/initializations.js"></script>
-    <script src="js/animations.js"></script>
+</body>
 
 </html>
