@@ -4,6 +4,14 @@
   background-color: red;
 }
 
+.no-gapb{
+  margin-bottom: 0px !important;
+}
+
+.no-gapt{
+  margin-top: 0px !important;
+}
+
 /* .medium {
   height: 450px !important;
 } */
