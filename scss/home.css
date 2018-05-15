@@ -4,14 +4,16 @@
   background-color: red;
 }
 
+.no-mar-top {
+  margin-top: 0%;
+}
+
 .no-gapb{
   margin-bottom: 0px !important;
 }
 
 .no-gapt{
   margin-top: 0px !important;
-.no-mar-top {
-  margin-top: 0%;
 }
 
 /* .medium {
