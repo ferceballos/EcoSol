@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
     <link rel="stylesheet" href="scss/home.css">
+    <link rel="stylesheet" href="scss/customforms.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -91,7 +92,7 @@
                     <div>
                         <div class="card-top">
                             <i class="material-icons pt1 mediano">wb_sunny</i>
-                            <h5>Energía renovable</h5>
+                            <h5>Energía</h5>
                         </div>
                     </div>
                     <div class="card-bottom">
@@ -106,7 +107,7 @@
                     <div>
                         <div class="card-top">
                             <i class="material-icons pt1 mediano">attach_money</i>
-                            <h5>Ahorre su chinchilla</h5>
+                            <h5>Ahorre</h5>
                         </div>
                     </div>
                     <div class="card-bottom">
@@ -230,11 +231,102 @@
         </div>
 
 
-        <div name="contact" class="row container mtb">
+        <div id="contact" name="contact" class="row container mtb scrollspy">
             <h4 class="col s12 light grey-text text-darken-2">Dónde encontrarnos</h4>
-            <div class="col s12">
+            <div class="col s12 m8">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241548.62450946172!2d-103.8820335189592!3d18.9226609725022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83f02443fa5f27e3!2sEcosol+Paneles+Solares+del+Pacifico!5e0!3m2!1ses-419!2smx!4v1523330631816"
                     width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col m4 row">
+                <div class="col s12 row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/icons/whats.png" class="small-icon" alt="">
+                    </div>
+                    <div class="col s10">
+                        <div class="input-field" id="whats">
+                            <input placeholder="Placeholder" id="whats" type="text" class="validate" readonly>
+                            <label for="whats">Whats App</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/icons/phone.png" class="small-icon" alt="">
+                    </div>
+                    <div class="col s10">
+                        <div class="input-field" id="phone">
+                            <input placeholder="Placeholder" id="phone" type="text" class="validate" readonly>
+                            <label for="phone">Teléfono</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/icons/face.png" class="small-icon" alt="">
+                    </div>
+                    <div class="col s10">
+                        <div class="input-field" id="face">
+                            <input value="EcoSol" placeholder="Placeholder" id="face" type="text" class="validate" readonly>
+                            <label for="face">Facebook</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/icons/mail.png" class="small-icon" alt="">
+                    </div>
+                    <div class="col s10">
+                        <div class="input-field" id="mail">
+                            <input value="ecosol.paneles.solares@gmail.com" placeholder="Placeholder" id="face" type="text" class="validate" readonly>
+                            <label for="mail">Correo</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div name="marcas" class="row container mtb center">
+            <h4 class="col s12 light grey-text text-darken-2">Marcas distribuidas</h4>
+            <p class="col s12 light grey-text text-darken-2 no-mar-top">Tenemos
+                <b>las mejores</b> marcas</p>
+
+            <div class="col s12 row valign-wrapper">
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/jinko.png" class="grayscale" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/ET.jpg" class="grayscale pad-logo" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/Growatt.jpg" class="grayscale" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/kaco.jpg" class="grayscale" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/linuo.png" class="grayscale" alt="">
+                </div>
+            </div>
+
+            <div class="col s12 row valign-wrapper">
+                <div class="col s1"></div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/nep.jpg" class="grayscale" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/QXPV.jpg" class="grayscale" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/seraphim.jpg" class="grayscale" alt="">
+                </div>
+                <div class="logo col s2 waves-effect waves-light">
+                    <img src="img/logos/SOLIS.jpg" class="grayscale" alt="">
+                </div>
+                <div class="col s1"></div>
+
             </div>
         </div>
     </main>
