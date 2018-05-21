@@ -1,7 +1,9 @@
 $(document).ready(function () {
     /* Flags and other setup varaibles */
-    var contact = false;
-    var brands = false;
+    let contact = false;
+    let brands = false;
+    let benefits = false;
+
     $('.logo .el').hide();
 
     function checkVisible(elm, evalType) {
@@ -65,6 +67,20 @@ $(document).ready(function () {
                         });
 
                         brands = true;
+                    }
+
+                    else if (checkVisible($("#benefits"), "visible") && !benefits) {
+
+
+                        var logos = anime({
+                            targets: '.benefits',
+                            translateY: [100, 0],
+                            opacity: [0, 1],
+                            easing: 'easeInOutExpo',
+                            delay: function (benefits, i) { return 0 + (i * 140); },
+                        });
+
+                        benefits = true;
                     }
                 }
             }
