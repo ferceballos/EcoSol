@@ -71,13 +71,20 @@ $(document).ready(function () {
 
                     else if (checkVisible($("#benefits"), "visible") && !benefits) {
 
+                        var bentitles = anime({
+                            targets: '.benefitstitle',
+                            translateY: [100, 0],
+                            opacity: [0, 1],
+                            easing: 'easeInOutQuad',
+                            delay: function (benefitstitle, i) { return 0 + (i * 140); },
+                        });
 
                         var logos = anime({
                             targets: '.benefits',
                             translateY: [100, 0],
                             opacity: [0, 1],
                             easing: 'easeInOutExpo',
-                            delay: function (benefits, i) { return 0 + (i * 140); },
+                            delay: function (benefits, i) { return 500 + (i * 140); },
                         });
 
                         benefits = true;
