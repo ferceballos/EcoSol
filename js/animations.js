@@ -24,7 +24,9 @@ $(document).ready(() => {
     $('.scrollspy').scrollSpy(
         {
             getActiveElement: (id) => {
-                if (id == "contact" && !contact) {
+                if (checkVisible($("#contact"), "visible") && !contact) {
+
+                    $("#map").invisible();
                     $("#contact").visible();
 
                     var contactInfo = anime({
@@ -69,7 +71,7 @@ $(document).ready(() => {
                         translateY: [100, 0],
                         opacity: [0, 1],
                         easing: 'easeInOutQuad',
-                        delay: function (benefitstitle, i) { return 0 + (i * 140); },
+                        delay: function (benefitstitle, i) { return 200 + (i * 100); },
                     });
 
                     var logos = anime({
@@ -77,7 +79,7 @@ $(document).ready(() => {
                         translateY: [100, 0],
                         opacity: [0, 1],
                         easing: 'easeInOutExpo',
-                        delay: function (benefits, i) { return 280 + (i * 140); },
+                        delay: function (benefits, i) { return 400 + (i * 200); },
                     });
 
                     benefits = true;
