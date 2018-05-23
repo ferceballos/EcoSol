@@ -1,7 +1,12 @@
+/* We hide the elements to be animated; so they don't show until the animation starts */
 $(document).ready(() => {
+    $('.logo .el').invisible();
+    $('#benefits').invisible();
+});
 
-    $(".logo .el").invisible();
-    $("#contact").invisible();
+/* Animations go on load (after all DOM and graphics are loaded) to make them run smoother; 
+if we were using a lot more resources and the loading time were bigger i would use another method, but this one works just perfect */
+$(window).on('load', () => {
 
     /* Flags and other setup varaibles */
     let contact = false;
@@ -25,7 +30,7 @@ $(document).ready(() => {
         {
             getActiveElement: (id) => {
                 if (id == "contact" && !contact) {
-                    $("#contact").visible();
+                    console.log(id);
 
                     var contactInfo = anime({
                         targets: '.fadedIn .el',
@@ -47,7 +52,7 @@ $(document).ready(() => {
                 }
 
                 else if (checkVisible($("#marcas"), "visible") && !brands) {
-                    $(".logo .el").visible();
+                    $('.logo .el').visible();
 
                     var logos = anime({
                         targets: '.logosanime .logo .el',

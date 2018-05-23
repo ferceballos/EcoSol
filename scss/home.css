@@ -68,6 +68,10 @@ padding-left: 0px !important;
   transition: filter 0.2s ease-out;
 }
 
+.hidden{
+  visibility: hidden;
+}
+
 .logo:hover img {
   filter: none;
   -webkit-filter: grayscale(0%);
