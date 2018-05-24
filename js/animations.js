@@ -1,12 +1,12 @@
 $(document).ready(() => {
 
-    $(".logo .el").invisible();
-    $("#contact").invisible();
-
     /* Flags and other setup varaibles */
     let contact = false;
     let brands = false;
     let benefits = false;
+
+    $(".logo .el").invisible();
+    $("#contact").invisible();
 
     /* Funtion to check if an element is on screen */
     function checkVisible(elm, evalType) {
@@ -21,71 +21,74 @@ $(document).ready(() => {
         if (evalType === "above") return ((y < (vpH + st)));
     }
 
-    $('.scrollspy').scrollSpy(
-        {
-            getActiveElement: (id) => {
-                if (checkVisible($("#contact"), "visible") && !contact) {
+    function checkWindow() {
+        console.log('CheckingWindow')
+        if (checkVisible($("#contact"), "visible") && !contact) {
 
-                    $("#map").invisible();
-                    $("#contact").visible();
+            $("#map").invisible();
+            $("#contact").visible();
 
-                    var contactInfo = anime({
-                        targets: '.fadedIn .el',
-                        translateX: [200, 0],
-                        opacity: [0, 1],
-                        easing: 'easeInOutQuad',
-                        delay: function (el, i) { return 400 + (i * 140); },
-                    });
+            var contactInfo = anime({
+                targets: '.fadedIn .el',
+                translateX: [200, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                delay: function (el, i) { return 400 + (i * 140); },
+            });
 
-                    var map = anime({
-                        targets: '.map',
-                        translateY: [200, 0],
-                        opacity: [0, 1],
-                        easing: 'easeInOutQuad',
-                        delay: 300
-                    });
+            var map = anime({
+                targets: '.map',
+                translateY: [200, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                delay: 300
+            });
 
-                    contact = true;
-                }
-
-                else if (checkVisible($("#marcas"), "visible") && !brands) {
-                    $(".logo .el").visible();
-
-                    var logos = anime({
-                        targets: '.logosanime .logo .el',
-                        translateY: [100, 0],
-                        opacity: [0, 1],
-                        easing: 'easeInOutExpo',
-                        delay: function (el, i) { return 100 + (i * 140); },
-                    });
-
-                    brands = true;
-                }
-
-                else if (checkVisible($("#benefits"), "visible") && !benefits) {
-
-                    $('#benefits').visible();
-
-                    var bentitles = anime({
-                        targets: '.benefitstitle',
-                        translateY: [100, 0],
-                        opacity: [0, 1],
-                        easing: 'easeInOutQuad',
-                        delay: function (benefitstitle, i) { return 200 + (i * 100); },
-                    });
-
-                    var logos = anime({
-                        targets: '.benefits',
-                        translateY: [100, 0],
-                        opacity: [0, 1],
-                        easing: 'easeInOutExpo',
-                        delay: function (benefits, i) { return 400 + (i * 200); },
-                    });
-
-                    benefits = true;
-                }
-            }
+            contact = true;
         }
-    );
+
+        else if (checkVisible($("#marcas"), "visible") && !brands) {
+            $(".logo .el").visible();
+
+            var logos = anime({
+                targets: '.logosanime .logo .el',
+                translateY: [100, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                delay: function (el, i) { return 100 + (i * 140); },
+            });
+
+            brands = true;
+        }
+
+        else if (checkVisible($("#benefits"), "visible") && !benefits) {
+
+            $('#benefits').visible();
+
+            var bentitles = anime({
+                targets: '.benefitstitle',
+                translateY: [100, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                delay: function (benefitstitle, i) { return 200 + (i * 100); },
+            });
+
+            var logos = anime({
+                targets: '.benefits',
+                translateY: [100, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                delay: function (benefits, i) { return 400 + (i * 200); },
+            });
+
+            benefits = true;
+        }
+    }
+
+    checkWindow();
+
+    $(window).scroll(() => {
+        checkWindow();
+    });
 })
 
