@@ -22,7 +22,6 @@ $(document).ready(() => {
     }
 
     function checkWindow() {
-        console.log('CheckingWindow')
         if (checkVisible($("#contact"), "visible") && !contact) {
 
             $("#map").invisible();
@@ -78,7 +77,7 @@ $(document).ready(() => {
                 translateY: [100, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                delay: function (benefits, i) { return 400 + (i * 200); },
+                delay: function (benefits, i) { return 800 + (i * 200); },
             });
 
             benefits = true;

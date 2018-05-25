@@ -1,0 +1,32 @@
+{
+  "name": "ecosol",
+  "version": "1.0.0",
+  "description": "A website to promote solar products",
+  "main": "index.html",
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": ">browser-sync start --server --files \"css/*.css, scss/*.css , ./*.html, *.html, js/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferceballos/EcoSol.git"
+  },
+  "keywords": [
+    "Solar",
+    "EcoSol",
+    "Ceballos",
+    "Panel",
+    "Inversor",
+    "Calentador"
+  ],
+  "author": "Fernando Ceballos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferceballos/EcoSol/issues"
+  },
+  "homepage": "https://github.com/ferceballos/EcoSol#readme"
+}
