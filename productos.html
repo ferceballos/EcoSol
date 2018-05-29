@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="clear-nav">
+        <nav class="clear-nav z-depth-0">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo fullh">
                     <img src="img/slogo.png" class="fullh" alt="">
@@ -51,12 +51,12 @@
     </header>
 
     <main class="indigo-grey lighten-5">
-        <div name="benefits" class="row container mt">
-            <h4 class="col s12 light grey-text text-darken-2">Eliga un tipo de producto para visualizar</h4>
-            <p class="col s12 grey-text text-darken-1 no-mar-top">Podrá consultar el resto de los tipos nuevamente cuando lo desee</p>
+        <div id="products-wrapper" class="row container mt">
+            <h4 class="col s12 light grey-text text-darken-2 products-header">Eliga un tipo de producto para visualizar</h4>
+            <p class="col s12 grey-text text-darken-1 no-mar-top products-header">Podrá consultar el resto de los tipos nuevamente cuando lo desee</p>
 
             <!-- Paneles Solares -->
-            <div class="col s12 m4 l4">
+            <div class="col s12 m4 l4 products ps">
 
                 <div class="card card-sized">
                     <div class="card-image blue-cream">
@@ -76,7 +76,7 @@
             </div>
 
             <!-- Calentadores -->
-            <div class="col s12 m4 l4">
+            <div class="col s12 m4 l4 products">
                 <div class="card card-sized">
                     <div class="card-image orange-cream">
                         <img src="img/calentadores/covert.png" class="pad-image">
@@ -94,7 +94,7 @@
             </div>
 
             <!-- Invesores -->
-            <div class="col s12 m4 l4 ">
+            <div class="col s12 m4 l4 products">
                 <div class="card card-sized bouncepistacho">
                     <div class="card-image pistacho">
                         <img src="img/invesores/cover.png">
@@ -125,6 +125,6 @@
 
     <!-- Own JavaScript files -->
     <script src="js/initializations.js"></script>
-    <script src="js/animations.js"></script>
+    <script src="js/productos.js"></script>
 
 </html>

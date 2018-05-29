@@ -3,13 +3,12 @@ $(document).ready(
         $('#gallery').slick({
             infinite: true,
             dots: true,
-            slidesToShow: 5,
+            slidesToShow: 4,
             swipeToSlide: true,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000,
             accessibility: true,
-            adaptiveHeight: true,
             arrows: true,
             prevArrow: '<a class="left-button btn-floating btn-small waves-effect waves-light orange darken-1"><i class="material-icons">chevron_left</i></a>',
             nextArrow: '<a class="right-button btn-floating btn-small waves-effect waves-light orange darken-1"><i class="material-icons">chevron_right</i></a>',
@@ -17,7 +16,7 @@ $(document).ready(
             focusOnSelect: false,
             pauseOnHover: true,
             centerPadding: true,
-            initialSlide: 4
+            initialSlide: 0,
         });
     }
 )
