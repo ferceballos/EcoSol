@@ -12,7 +12,7 @@ $(document).ready(
         var instance = M.Collapsible.init(elem, {});
 
         var elem = document.querySelector('.dropdown-trigger');
-        var instance = M.Dropdown.init(elem, { alignment: 'left', constrainWidth: false, coverTrigger: false, hover: true });
+        var instance = M.Dropdown.init(elem, { alignment: 'left', constrainWidth: false, coverTrigger: false, hover: true, autoTrigger: false });
     
         $("#whats").hover(function handlerIn() {
 
