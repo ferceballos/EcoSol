@@ -37,7 +37,6 @@ $(document).ready(() => {
 
             var map = anime({
                 targets: '.map',
-                translateY: [200, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutQuad',
                 delay: 300
@@ -54,7 +53,7 @@ $(document).ready(() => {
                 translateY: [100, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                delay: function (el, i) { return 100 + (i * 140); },
+                delay: function (el, i) { return 400 + (i * 140); },
             });
 
             brands = true;
