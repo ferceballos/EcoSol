@@ -33,7 +33,7 @@ $(document).ready(() => {
 
             var productsAnimation = anime({
                 targets: '.products',
-                translateY: [100, 0],
+                translateY: [60, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 delay: function (products, i) { return 800 + (i * 200); },
