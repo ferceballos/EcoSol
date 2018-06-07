@@ -12,6 +12,10 @@
   opacity: 0%;
 }
 
+.banner {
+  height: 200px;
+}
+
 .mapcontain {
   padding-left: 0px !important;
   margin-left: 0px !important;
@@ -94,6 +98,7 @@
 .no-gapb {
   margin-bottom: 0px !important;
 }
+
 
 .header{
   height: 380px !important;
