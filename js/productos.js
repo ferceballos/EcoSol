@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
     /* Flags and other setup varaibles */
-    let products = false;
+    var products = false;
 
     $("#products-wrapper").invisible();
 
@@ -23,15 +23,15 @@ $(document).ready(() => {
             $("#products-wrapper").visible();
 
             var letters = anime({
-                targets: '.products-header',
+                targets: '.productsheader',
                 translateY: [100, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                delay: function (products, i) { return 200 + (i * 200); },
+                delay: function (productsheader, i) { return 200 + (i * 200); },
             });
 
 
-            var products = anime({
+            var productsAnimation = anime({
                 targets: '.products',
                 translateY: [60, 0],
                 opacity: [0, 1],
