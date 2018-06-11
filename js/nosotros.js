@@ -7,8 +7,8 @@ $(document).ready(function () {
     // Gallery options
     $('#gallery').slick({
         infinite: true,
-        dots: true,
-        slidesToShow: 5,
+        dots: false,
+        slidesToShow: 4,
         swipeToSlide: true,
         slidesToScroll: 1,
         autoplay: true,
@@ -21,7 +21,6 @@ $(document).ready(function () {
         centerMode: true,
         focusOnSelect: false,
         pauseOnHover: true,
-        centerPadding: true,
         initialSlide: 0
     });
 
