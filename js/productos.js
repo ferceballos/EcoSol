@@ -2,6 +2,7 @@ $(document).ready(() => {
 
     /* Flags and other setup varaibles */
     var products = false;
+    var InversorAnimation;
 
     $("#products-wrapper").invisible();
 
@@ -50,6 +51,44 @@ $(document).ready(() => {
     $(window).scroll(() => {
         checkWindow();
     });
+
+    $("#inversors").mouseenter(() => {
+
+        console.log("enter");
+        InversorAnimation = null;
+        InversorAnimation = anime.timeline();
+
+        InversorAnimation
+            .add({
+                targets: '#inversorpan',
+                backgroundColor: '#AFF8DB',
+                easing: 'easeInOutQuart',
+                translateY: [-100, 0],
+                elasticity: 200,
+                duration: 300
+            })
+            .add({
+                targets: '#inverButton',
+                translateX: { value: 100, duration: 300, elasticity: 300 },
+                easing: 'easeInOutQuart',
+            })
+            .add({
+                targets: '#inverButton',
+                translateX: { value: 0, duration: 300, elasticity: 300 },
+                easing: 'linear',
+
+            })
+
+
+    })
+
+    $("#inversors").mouseleave(() => {
+        console.log("leave");
+        InversorAnimation.play();
+        InversorAnimation.reverse();
+
+
+    })
 
 
     $(".ps").mouseenter((e) => {
