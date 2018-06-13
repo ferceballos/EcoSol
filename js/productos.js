@@ -2,7 +2,30 @@ $(document).ready(() => {
 
     /* Flags and other setup varaibles */
     var products = false;
-    var InversorAnimation;
+    var InversorAnimation = anime.timeline();
+
+    InversorAnimation
+        .add({
+            targets: '#inversorpan',
+            backgroundColor: '#AFF8DB',
+            easing: 'easeInOutQuart',
+            translateY: [-100, 0],
+            elasticity: 200,
+            duration: 300
+        })
+        .add({
+            targets: '#inverButton',
+            rotate: {
+                value: 180,
+                duration: 100,
+                easing: 'easeInOutSine'
+            }
+        })
+        ;
+
+    InversorAnimation.pause();
+    InversorAnimation.reverse();
+
 
     $("#products-wrapper").invisible();
 
@@ -53,33 +76,9 @@ $(document).ready(() => {
     });
 
     $("#inversors").mouseenter(() => {
-
         console.log("enter");
-        InversorAnimation = null;
-        InversorAnimation = anime.timeline();
-
-        InversorAnimation
-            .add({
-                targets: '#inversorpan',
-                backgroundColor: '#AFF8DB',
-                easing: 'easeInOutQuart',
-                translateY: [-100, 0],
-                elasticity: 200,
-                duration: 300
-            })
-            .add({
-                targets: '#inverButton',
-                translateX: { value: 100, duration: 300, elasticity: 300 },
-                easing: 'easeInOutQuart',
-            })
-            .add({
-                targets: '#inverButton',
-                translateX: { value: 0, duration: 300, elasticity: 300 },
-                easing: 'linear',
-
-            })
-
-
+        InversorAnimation.play();
+        InversorAnimation.reverse();
     })
 
     $("#inversors").mouseleave(() => {

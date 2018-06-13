@@ -211,6 +211,9 @@
 .orange-cream {
   background-color: #FFF5BA
 }
+.halfway-fab{
+  top: -40px;
+}
 
 .pistacho {
   background-color: #AFF8DB;
@@ -236,10 +239,17 @@
   margin: 8%;
 }
 
+.card-sized{
+  height: 300px;
+}
+
 .mt {
   margin-top: 0%;
 }
 
+.mr1{
+  margin-right: 20px;
+}
 .mt2 {
   margin-top: 4%;
 }
