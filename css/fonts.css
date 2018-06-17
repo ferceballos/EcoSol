@@ -1,0 +1,32 @@
+/* Formatting */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* Font weights
+400 is the same as normal */
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 250
+}
+
+.lighter {
+    font-weight: 100
+}

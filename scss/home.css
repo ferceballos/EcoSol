@@ -1,374 +1,372 @@
 .square {
-  width: 100px !important;
-  height: 100px !important;
-  background-color: red;
+    width: 100px !important;
+    height: 100px !important;
+    background-color: red;
 }
 
 .fullh {
-  height: 100% !important;
+    height: 100% !important;
 }
 
 .logo {
-  opacity: 0%;
+    opacity: 0%;
 }
 
 .banner {
-  height: 200px;
+    height: 200px;
 }
 
 .mapcontain {
-  padding-left: 0px !important;
-  margin-left: 0px !important;
-  padding-right: 0px !important;
-  margin-right: 0px !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
 }
 
 .map {
-  width: 100% !important;
-  height: 600px !important;
-  border: none;
-  float: left !important;
+    width: 100% !important;
+    height: 600px !important;
+    border: none;
+    float: left !important;
 }
 
-.card-sector{
- padding-left: 4% !important;
- padding-right: 4% !important;
+.card-sector {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
 }
 
 /* scard content */
 
 .content-scard {}
 
-
 /* scard content label */
 
 .content-scard p {
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
-  font-size: 12px;
-  padding-left: 0px !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    font-size: 12px;
+    padding-left: 0px !important;
 }
 
-.svg{
-  width:76% !important; 
+.svg {
+    width: 76% !important;
 }
 
 /* scard content string */
 
 .content-scard h5 {
-  margin-top: 4px;
-  padding-left: 0px !important;
+    margin-top: 4px;
+    padding-left: 0px !important;
 }
 
 .small-icon {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .rounded {
-  border-radius: 14px;
+    border-radius: 14px;
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-  /* Firefox 3.5+ */
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(80%);
-  /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: filter 0.2s ease-out;
-  -moz-transition: filter 0.2s ease-out;
-  -o-transition: filter 0.2s ease-out;
-  transition: filter 0.2s ease-out;
+    width: 100%;
+    height: 100%;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(80%);
+    /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: filter 0.2s ease-out;
+    -moz-transition: filter 0.2s ease-out;
+    -o-transition: filter 0.2s ease-out;
+    transition: filter 0.2s ease-out;
 }
 
 .hidden {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .logo:hover img {
-  filter: none;
-  -webkit-filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0%);
 }
 
 .parallax-container {
-  height: 84% !important;
+    height: 84% !important;
 }
 
 .pad-logo {
-  padding: 14px;
+    padding: 14px;
 }
 
 .no-mar-top {
-  margin-top: 0%;
+    margin-top: 0%;
 }
 
 .no-gapb {
-  margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
-
-.header{
-  height: 380px !important;
+.no-gapr {
+    margin-right: 0px !important;
 }
- .no-gapt {
-  margin-top: 0px !important;
+
+.header {
+    height: 380px !important;
+}
+
+.no-gapt {
+    margin-top: 0px !important;
 }
 
 #gallery {
-  height: 230;
+    height: 230;
 }
 
 .gallery-img {
-  margin-left: 8px !important;
-  margin-right: 8px !important;
-  border-radius: 10px;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    border-radius: 10px;
 }
 
 .left-button {
-  left: -10px;
+    left: -10px;
 }
 
 .right-button {
-  right: -10px;
+    right: -10px;
 }
 
-.left-button, .right-button {
-  position: absolute;
-  top: 50%;
-  padding: 0px;
-  transform: translate(0, -50%);
+.left-button,
+.right-button {
+    position: absolute;
+    top: 50%;
+    padding: 0px;
+    transform: translate(0, -50%);
 }
 
 /* .medium {
   height: 450px !important;
 } */
 
-
-
 .clear-nav {
-  background-color: white;
+    background-color: white;
 }
 
 .section {
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 .clear-nav a {
-  color: #616161;
+    color: #616161;
 }
 
 .sun-size {
-  width: 50%;
+    width: 50%;
 }
 
 .card-bottom {
-  padding-bottom: 8%;
-  padding-left: 8%;
-  padding-right: 8%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .card-top {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 8%;
-  padding-right: 8%;
-  border-bottom: #d4d4d4 solid 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-bottom: #d4d4d4 solid 1px;
 }
 
 .card-image img {
-  max-width: 100%;
-  max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .card-image {
-  height: 300px;
+    height: 300px;
 }
 
 .footerWrapper a {
-  color: #616161;
+    color: #616161;
 }
 
-.card-content{
-  z-index: 0;
+.card-image {
+    z-index: 1;
 }
-
-.card-image{
-  z-index: 1;
-}
-
 
 .primary {
-  background-color: #fb8c00;
+    background-color: #fb8c00;
 }
 
 .blue-cream {
-  background-color: #AFCBFF;
+    background-color: #AFCBFF;
 }
 
 .orange-cream {
-  background-color: #FFF5BA
+    background-color: #FFF5BA
 }
-.halfway-fab{
-  top: -40px;
+
+.halfway-fab {
+    top: -40px;
 }
 
 .pistacho {
-  background-color: #AFF8DB;
+    background-color: #AFF8DB;
 }
 
 .pad-image {
-  padding: 10%;
+    padding: 10%;
 }
 
 .padded {
-  padding-left: 60%;
+    padding-left: 60%;
 }
 
 .pt2 {
-  padding-top: 16%;
+    padding-top: 16%;
 }
 
 .pt1 {
-  padding-top: 8%;
+    padding-top: 8%;
 }
 
 .mgn1 {
-  margin: 8%;
+    margin: 8%;
 }
 
-.card-sized{
-  height: 300px;
-}
+.card-sized {}
 
 .mt {
-  margin-top: 0%;
+    margin-top: 0%;
 }
 
-.mr1{
-  margin-right: 20px;
+.mr1 {
+    margin-right: 20px;
 }
+
 .mt2 {
-  margin-top: 4%;
+    margin-top: 4%;
 }
 
 .mb2 {
-  margin-bottom: 4%;
+    margin-bottom: 4%;
 }
 
 .mtb {
-  margin-top: 4%;
-  margin-bottom: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .centerContainer {
-  height: 10em;
-  position: relative;
+    height: 10em;
+    position: relative;
 }
 
 .centerElement {
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .borderud {
-  border-top: #dfdfdf solid 1px;
-  border-bottom: #dfdfdf solid 1px;
+    border-top: #dfdfdf solid 1px;
+    border-bottom: #dfdfdf solid 1px;
 }
 
 .mediano {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
-.flow-text{
-  font-size: 1.4rem;
+.flow-text {
+    font-size: 1.4rem;
 }
 
 .col-content {
-  padding: 8%;
-  width: 98%;
+    padding: 8%;
+    width: 98%;
 }
 
 .iconCover {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 /*Rotating animation */
 
 @-webkit-keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .rotating {
-  -webkit-animation: rotating 8s linear infinite;
-  -moz-animation: rotating 8s linear infinite;
-  -ms-animation: rotating 8s linear infinite;
-  -o-animation: rotating 8s linear infinite;
-  animation: rotating 8s linear infinite;
+    -webkit-animation: rotating 8s linear infinite;
+    -moz-animation: rotating 8s linear infinite;
+    -ms-animation: rotating 8s linear infinite;
+    -o-animation: rotating 8s linear infinite;
+    animation: rotating 8s linear infinite;
 }
 
 /* Hover animation */
 
 .icon-section i {
-  font-size: 3rem;
-  color: #fb8c00;
+    font-size: 3rem;
+    color: #fb8c00;
 }
 
-.icon-hover i, .icon-hover h5 {
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
+.icon-hover i,
+.icon-hover h5 {
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
 }
 
 .icon-hover .card-top {
-  -webkit-transition: background-color 0.2s ease-out;
-  -moz-transition: background-color 0.2s ease-out;
-  -o-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
 }
 
-.icon-hover:hover i, .icon-hover:hover h5 {
-  color: white;
-  cursor: pointer;
+.icon-hover:hover i,
+.icon-hover:hover h5 {
+    color: white;
+    cursor: pointer;
 }
 
 .icon-hover:hover .card-top {
-  background-color: #fb8c00;
-  cursor: pointer;
+    background-color: #fb8c00;
+    cursor: pointer;
 }
-
 
 /*# sourceMappingURL=home.css.map */
