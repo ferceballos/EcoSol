@@ -100,9 +100,39 @@
     padding: 14px;
 }
 
+#seraphim{
+    padding-top: 6px;
+}
+
+.active-brand{
+    background-color: rgba(175, 203, 255, 0.685) !important;
+}
+
+.logo-wrapped{
+    width: 50%;
+    height: 52px;
+}
+
+.card-product{
+    height: 410px;
+}
+
+.card-logo {
+    padding: 2px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-action{
+ padding-bottom: 0px !important;
+ padding-top: 0px !important;
+
+}
+
 .padc-logo {
     padding: 14px;
     padding-top: 10px;
+    max-height: 54px;
 }
 
 .no-mar-top {

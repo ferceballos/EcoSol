@@ -7,7 +7,7 @@ $(document).ready(() => {
             brand: 'Seraphim',
             power: '360',
             img: 'cover.png',
-            logo: 'Growatt.jpg'
+            logo: 'seraphim.png'
         }];
 
         var cards = "";
@@ -23,25 +23,25 @@ $(document).ready(() => {
         panels.push(seraphim360);
 
         panels.forEach(e => {
-            cards += '<div class="col m4 gridbrick" data-groups=\'["' + e.brand + '"]\' data-title="' + e.power + '">' +
+            cards += '<div class="col m4 gridbrick" data-groups=\'["' + e.brand + '"]\' data-title="320">' +
                 '                        <div class="card">' +
                 '                            <div class="card-image">' +
                 '                                <img src="img/paneles/' + e.img + '" class="responsive-img" alt="">' +
-                '' +
-                '                                <div class="row center">' +
-                '                                    <div class="col s6">' +
-                '                                        <p class="grey-text text-darken-2">' + e.power + ' Watts</p>' +
-                '                                    </div>' +
-                '' +
-                '                                    <div class="col s6">' +
-                '                                        <img class="responsive-img padc-logo" src="img/logos/' + e.logo + '" alt="">' +
-                '                                    </div>' +
-                '                                </div>' +
-                '' +
+                '                                <span class="card-title"></span>' +
                 '                            </div>' +
                 '' +
                 '                            <div class="card-action">' +
-                '                                <a href="#">Ver detalles</a>' +
+                '                                <div class="card-action">' +
+                '                                    <div class="row center valign-wrapper no-gapb">' +
+                '                                        <div class="col s6">' +
+                '                                            <p class="grey-text text-darken-2">' + e.power + ' Watts</p>' +
+                '                                        </div>' +
+                '' +
+                '                                        <div class="col s6 valign-wrapper">' +
+                '                                            <img class="responsive-img card-logo" src="img/logos/' + e.logo + '" alt="">' +
+                '                                        </div>' +
+                '                                    </div>' +
+                '                                </div>' +
                 '                            </div>' +
                 '                        </div>' +
                 '                    </div>';
@@ -144,15 +144,12 @@ $(document).ready(() => {
 
     var shipturflag = false;
 
-    $("#shiptur").click(() => {
-
+    $("#seraphim").click(() => {
         shipturflag ? shuffleInstance.filter() : shuffleInstance.filter('Seraphim');
+        shipturflag ? $("#seraphim").removeClass('active-brand') : $("#seraphim").addClass('active-brand');
+        //shipturflag ? $("#seraphim").addClass('active-brand'): $("#seraphim").removeClass('active-brand');
+
 
         shipturflag = !shipturflag;
-
-    })
-
-
-
-
+    });
 });
