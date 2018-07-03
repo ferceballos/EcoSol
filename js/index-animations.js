@@ -31,14 +31,15 @@ $(document).ready(() => {
                 targets: '.fadedIn .el',
                 translateX: [200, 0],
                 opacity: [0, 1],
-                easing: 'easeInOutQuad',
-                delay: function (el, i) { return 100 + (i * 140); },
+                easing: 'easeInOutExpo',
+                delay: function (el, i) { return 200 + (i * 200); },
+                
             });
 
             var map = anime({
                 targets: '.map',
                 opacity: [0, 1],
-                easing: 'easeInOutQuad',
+                easing: 'easeInOutExpo',
             });
 
             contact = true;
