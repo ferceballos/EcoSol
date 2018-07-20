@@ -12,6 +12,7 @@
     opacity: 0%;
 }
 
+
 .banner {
     height: 200px;
 }
@@ -37,7 +38,6 @@
 
 /* scard content */
 
-.content-scard {}
 
 /* scard content label */
 
@@ -100,20 +100,20 @@
     padding: 14px;
 }
 
-#seraphim{
+#seraphim {
     padding-top: 6px;
 }
 
-.active-brand{
+.active-brand {
     background-color: rgba(175, 203, 255, 0.685) !important;
 }
 
-.logo-wrapped{
+.logo-wrapped {
     width: 50%;
     height: 52px;
 }
 
-.card-product{
+.card-product {
     height: 410px;
 }
 
@@ -123,10 +123,9 @@
     max-height: 100%;
 }
 
-.card-action{
- padding-bottom: 0px !important;
- padding-top: 0px !important;
-
+.card-action {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
 }
 
 .padc-logo {
@@ -173,8 +172,7 @@
     right: -10px;
 }
 
-.left-button,
-.right-button {
+.left-button, .right-button {
     position: absolute;
     top: 50%;
     padding: 0px;
@@ -268,11 +266,38 @@
     padding-top: 8%;
 }
 
+.pt {
+    padding-top: 4%;
+}
+
+.card-stacked {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.smaller {
+    height: 180px;
+}
+
+.powersvg {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.powersvg-sm {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.solisanim {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .mgn1 {
     margin: 8%;
 }
 
-.card-sized {}
 
 .mt {
     margin-top: 0%;
@@ -327,6 +352,21 @@
     width: 98%;
 }
 
+.cfe {
+    padding: 10%;
+    height: 150px;
+}
+
+.tobottom {
+    bottom: 0;
+}
+
+#slider {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #616161;
+}
+
 .iconCover {
     font-size: 48px;
 }
@@ -378,8 +418,7 @@
     color: #fb8c00;
 }
 
-.icon-hover i,
-.icon-hover h5 {
+.icon-hover i, .icon-hover h5 {
     -webkit-transition: color 0.2s ease-out;
     -moz-transition: color 0.2s ease-out;
     -o-transition: color 0.2s ease-out;
@@ -393,8 +432,7 @@
     transition: background-color 0.2s ease-out;
 }
 
-.icon-hover:hover i,
-.icon-hover:hover h5 {
+.icon-hover:hover i, .icon-hover:hover h5 {
     color: white;
     cursor: pointer;
 }

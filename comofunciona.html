@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="stylesheet" href="scss/home.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="grey lighten-5">
+    <header>
+        <nav class="clear-nav z-depth-0">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo fullh">
+                    <img src="img/slogo.png" class="fullh" alt="">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class='dropdown-trigger' href='productos.html' data-target='dropdown1'>Productos</a>
+                    </li>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li>
+                            <a href="paneles.html">Paneles solares</a>
+                        </li>
+                        <li>
+                            <a href="inversores.html">Inversores</a>
+                        </li>
+                        <li>
+                            <a href="calentadores.html">Calentadores solares</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grey lighten-5 canvas container">
+        <div class="row pt no-gapb">
+            <div class="col m4 card-stacked">
+                <div class="card-stacked card row smaller valign-wrapper">
+                    <form class="col m3" action="#">
+                        <p>
+                            <label>
+                                <input id="p3" class="with-gap" name="sunpower" type="radio" class="radios" value="3" />
+                                <span>3</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input id="p2" class="with-gap" name="sunpower" type="radio" class="clasi" value="2" />
+                                <span>2</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input id="p1" class="with-gap" name="sunpower" type="radio" class="radios" value="1" checked/>
+                                <span>1</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input id="p0" class="with-gap" name="sunpower" type="radio" class="radios" value="0" />
+                                <span>0</span>
+                            </label>
+                        </p>
+                    </form>
+                    <div id="sun" class="col m9">
+                        <img src="img/animation/p23.svg" class="powersvg center-block" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col m4 card-stacked">
+                <div class="card smaller  valign-wrapper">
+                    <img src="img/animation/panel1.png" class="powersvg center-block" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row no-gapb">
+            <div class="col m4 offset-m4 card-stacked">
+                <div class="card smaller valign-wrapper row">
+                    <img src="img/invesores/cover.png" class="col m8 solisanim center-block" alt="">
+                    <div class="col m4">
+                        <h5 id="voltage" class="no-gapb"></h5>
+                        <h5 class="light no-gapt">Watts</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gapb">
+
+            <div class="col m4 card-stacked">
+
+                <div class="card smaller">
+
+                    <div class="row">
+                        <img src="img/animation/electrictower.svg" class="cfe center-block" alt="">
+                    </div>
+
+                    <div class="card-stacked">
+                        <div class="row tobottom center">
+                            <div id="slider"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col m4 offset-m4">
+                <div class="card smaller">
+                    <div class="row">
+                        <div class="col m6 orange solisanim">
+                            <p>Hi</p>
+                        </div>
+                        <div class="col m6 cyan solisanim">
+                            <button id="80" class="btn-block">80%</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6 blue solisanim">
+
+                        </div>
+                        <div class="col m6 green solisanim">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- JavaScript frameworks used -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/wNumb.js"></script>
+
+    <!-- Own JavaScript files -->
+
+    <script src="js/shuffle.js"></script>
+
+    <script src="js/howitworks.js"></script>
+
+</html>
