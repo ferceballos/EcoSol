@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="grey lighten-5">
+<body id="svgContainer" class="grey lighten-5">
     <header>
         <nav class="clear-nav z-depth-0">
             <div class="nav-wrapper container">
@@ -89,14 +89,14 @@
 
             </div>
             <div class="col m4 card-stacked">
-                <div class="card smaller  valign-wrapper">
+                <div id="panel" class="card smaller  valign-wrapper">
                     <img src="img/animation/panel1.png" class="powersvg center-block" alt="">
                 </div>
             </div>
         </div>
         <div class="row no-gapb">
             <div class="col m4 offset-m4 card-stacked">
-                <div class="card smaller valign-wrapper row">
+                <div id="inversor" class="card smaller valign-wrapper row">
                     <img src="img/invesores/cover.png" class="col m8 solisanim center-block" alt="">
                     <div class="col m4">
                         <h5 id="voltage" class="no-gapb"></h5>
@@ -109,13 +109,13 @@
 
             <div class="col m4 card-stacked">
 
-                <div class="card smaller">
+                <div id="comission" class="card smaller">
 
-                    <div class="row">
+                    <div class="row h80">
                         <img src="img/animation/electrictower.svg" class="cfe center-block" alt="">
                     </div>
 
-                    <div class="card-stacked">
+                    <div class="card-stacked h20">
                         <div class="row tobottom center">
                             <div id="slider"></div>
                         </div>
@@ -125,27 +125,36 @@
                 </div>
             </div>
 
-            <div class="col m4 offset-m4">
-                <div class="card smaller">
-                    <div class="row">
-                        <div class="col m6 orange solisanim">
+            <div id="usage" class="col m4 offset-m4">
+                <div class="card smaller card-stacked">
+                    <div class="row h100">
+                        <div class="col m6 h50 orange solisanim">
                             <p>Hi</p>
                         </div>
-                        <div class="col m6 cyan solisanim">
+                        <div class="col m6 h50 cyan solisanim">
                             <button id="80" class="btn-block">80%</button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col m6 blue solisanim">
+                        <div class="col m6 h50 blue solisanim">
 
                         </div>
-                        <div class="col m6 green solisanim">
+                        <div class="col m6 h50 green solisanim">
 
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <svg id="svg1" width="0" height="0">
+                <path id="panelPath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+            </svg>
+
+            <svg id="svg2" width="0" height="0">
+                <path id="comissionPath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+            </svg>
+
+            <svg id="svg3" width="0" height="0">
+                <path id="usagePath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+            </svg>
         </div>
     </main>
 
@@ -154,13 +163,12 @@
     <script src="js/jquery.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/anime.min.js"></script>
-    <script src="js/nouislider.js"></script>
     <script src="js/wNumb.js"></script>
+    <script src="js/nouislider.js"></script>
+
 
     <!-- Own JavaScript files -->
-
     <script src="js/shuffle.js"></script>
-
     <script src="js/howitworks.js"></script>
 
 </html>

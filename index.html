@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="scss/home.css">
     <link rel="stylesheet" href="scss/customforms.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -53,37 +54,21 @@
     </header>
 
     <main>
-        <div name="slider" class="slider scrollspy">
-            <ul class="slides">
-                <li>
-                    <img src="img/center.jpg">
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/left.jpg">
-                    <div class="caption left-align">
-                        <h3>Left Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/right.jpg">
-                    <div class="caption right-align">
-                        <h3>Right Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/left2.jpg">
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-            </ul>
+        <div id="videoContainer" class="slider scrollspy">
+            <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+                <source src="img/fcover.mp4" type="video/mp4">
+            </video>
+
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="content valign-wrapper">
+                <div class="center-block center">
+                    <h1 class="lighter orange-text text-lighten-2">ECOSOL</h1>
+                    <!-- <img src="img/circlelogo.png" class="circle" alt=""> -->
+                    <h4 id="slogan" class="lighter">Páneles solares del Pacífico</h4>
+                </div>
+
+            </div>
         </div>
 
 
@@ -161,12 +146,18 @@
             <div class="container row valign-wrapper">
                 <div class="col hide-on-small-only  m2"></div>
                 <div class="col s12 m4">
-                    <img class="sun-size m1 rotating" src="img/sunny.png">
+                    <img class="sun-size" src="img/animation/panel1.png">
                 </div>
                 <div class="col s12 m6 mtb">
                     <div class="caption left-align">
-                        <h4 class="grey-text text-darken-3">Use la energía del sol</h4>
-                        <h5 class="light grey-text text-darken-4">La energía limpia reduce las emisiones de carbono, empiece a usar energía natural</h5>
+                        <h4 class="grey-text text-darken-3">¿Cómo funcionan los páneles solares?</h4>
+                        <p class="light grey-text text-darken-4">Aprende hacia dónde viaja la energía en casa con paneles solares. ¿Sabías la energía producida con
+                            tus paneles la puedes vender a CFE?</p>
+
+                        <a href="comofunciona.html" class="valign-wrapper">Ver cómo funciona
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -226,12 +217,12 @@
             </div>
         </div>
 
-        <div name="equipment" class="section borderud scrollspy">
+        <div name="equipment" class="grey lighten-3 borderud scrollspy">
             <div class="row container valign-wrapper">
                 <div class="col s12 m6">
-                    <h4>We have the best equipment</h4>
-                    <p>Watch our products.</p>
-                    <a class="waves-effect waves-light btn-large orange darken-1" href="products.html">Ver Productos</a>
+                    <h4>Tenemos los mejores equipos</h4>
+                    <p>Le invitamos a ver nuestro catálogo.</p>
+                    <a class="waves-effect waves-light btn orange darken-1" href="products.html">Ver Productos</a>
                 </div>
                 <div class="col s12 m6">
                     <img src="img/equipment.png" class="responsive-img">
@@ -242,6 +233,7 @@
 
         <div id="contact" class="row container mtb scrollspy">
             <h4 class="col s12 light grey-text text-darken-2">Dónde encontrarnos</h4>
+            <p class="col s12 light grey-text text-darken-2 no-mar-top">Contacta con nosotros</p>
             <div class="col s12 row valign-wrapper ">
                 <div class="col s12 m8 mapcontain">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241548.62450946172!2d-103.8820335189592!3d18.9226609725022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83f02443fa5f27e3!2sEcosol+Paneles+Solares+del+Pacifico!5e0!3m2!1ses-419!2smx!4v1523330631816"

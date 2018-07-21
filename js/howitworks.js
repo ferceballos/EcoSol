@@ -5,6 +5,34 @@ $(document).ready(function () {
     var activeinversor = true;
     var usedenergy = 0;
 
+    //setup slider
+    noUiSlider.create(slider, {
+        start: [0, 0],
+        connect: true,
+        step: 1,
+        orientation: 'horizontal', // 'horizontal' or 'vertical'
+        range: {
+            'min': -100,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        }),
+        // Show a scale with the slider
+        pips: {
+            mode: 'positions',
+            values: [0, 50, 100],
+            density: 4,
+            format: wNumb({
+                decimals: 0,
+                suffix: '%'
+            })
+
+        },
+        tooltips: [true, true],
+
+    });
+
 
     $("input:radio").click(function () {
         checkPower();
@@ -29,31 +57,7 @@ $(document).ready(function () {
 
     function checkPower() {
 
-        //setup slider
-        noUiSlider.create(slider, {
-            start: [0, 100],
-            connect: true,
-            step: 1,
-            orientation: 'horizontal', // 'horizontal' or 'vertical'
-            range: {
-                'min': -100,
-                'max': 100
-            },
-            format: wNumb({
-                decimals: 0
-            }),
-            // Show a scale with the slider
-            pips: {
-                mode: 'positions',
-                values: [0, 50, 100],
-                density: 4,
-                format: wNumb({
-                    decimals: 0,
-                    suffix: '%'
-                })
 
-            }
-        });
         power = $('input:radio[name=sunpower]:checked').val();
 
         if (power == 0) {
@@ -84,9 +88,31 @@ $(document).ready(function () {
             $('#voltage').html(voltage);
         }
 
-        comusage = (voltage * 100) / 4600;
-        // don't change the lower one.
-        slider.noUiSlider.set([null, 14]);
+        comusage = ((voltage - usedenergy) * 100) / 4600;
+        console.log(comusage);
+        slider.noUiSlider.set([comusage, 0]);
+        slider.noUiSlider.set([0, comusage]);
+
+        $('#comission').hover(function () {
+            if (comusage < 0) {
+                $(".noUi-handle-lower").addClass('noUi-active');
+            }
+
+            else {
+                $(".noUi-handle-upper").addClass('noUi-active');
+            }
+        }, function () {
+            if (comusage < 0) {
+                $(".noUi-handle-lower").removeClass('noUi-active');
+            }
+
+            else {
+                $(".noUi-handle-upper").removeClass('noUi-active');
+            }
+        })
+
+
+
     }
 
 });

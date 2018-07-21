@@ -24,7 +24,7 @@ $(document).ready(() => {
     function checkWindow() {
         if (checkVisible($("#contact"), "visible") && !contact) {
 
-            $("#map").invisible();
+            
             $("#contact").visible();
 
             var contactInfo = anime({
@@ -36,11 +36,7 @@ $(document).ready(() => {
                 
             });
 
-            var map = anime({
-                targets: '.map',
-                opacity: [0, 1],
-                easing: 'easeInOutExpo',
-            });
+          
 
             contact = true;
         }
