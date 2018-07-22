@@ -4,6 +4,7 @@ $(document).ready(() => {
     let contact = false;
     let brands = false;
     let benefits = false;
+    var i = 0;
 
     $(".logo .el").invisible();
     $("#contact").invisible();
@@ -23,8 +24,6 @@ $(document).ready(() => {
 
     function checkWindow() {
         if (checkVisible($("#contact"), "visible") && !contact) {
-
-            
             $("#contact").visible();
 
             var contactInfo = anime({
@@ -32,11 +31,8 @@ $(document).ready(() => {
                 translateX: [200, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                delay: function (el, i) { return 200 + (i * 200); },
-                
+                delay: function (el, i) { return 0 + (i * 300); },
             });
-
-          
 
             contact = true;
         }
@@ -49,7 +45,7 @@ $(document).ready(() => {
                 translateY: [100, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                delay: function (el, i) { return 240 + (i * 140); },
+                delay: function (el, i) { return 0 + (i * 200); },
             });
 
             brands = true;
@@ -63,8 +59,8 @@ $(document).ready(() => {
                 targets: '.benefitstitle',
                 translateY: [100, 0],
                 opacity: [0, 1],
-                easing: 'easeInOutQuad',
-                delay: function (benefitstitle, i) { return 200 + (i * 100); },
+                easing: 'easeInOutExpo',
+                delay: function (benefitstitle, i) { return 0 + (i * 100); },
             });
 
             var logos = anime({
@@ -72,7 +68,7 @@ $(document).ready(() => {
                 translateY: [100, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                delay: function (benefits, i) { return 800 + (i * 200); },
+                delay: function (benefits, i) { return 200 + (i * 200); },
             });
 
             benefits = true;
@@ -84,5 +80,41 @@ $(document).ready(() => {
     $(window).scroll(() => {
         checkWindow();
     });
-})
 
+    var listOfSlogans = {
+        0: "Páneles solares del pacífico",
+        1: "Cuidamos nuestro planeta para las futuras generaciones",
+        2: "Una mejor calidad de vida a través de la energía solar",
+        3: "Las chinchillas se apoderarán del universo",
+        4: "Bienestar a través del ahorro y generación de energía"
+    }
+
+    var showUp = anime({
+        targets: '#slogans',
+        translateY: [-30, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        autoplay: false,
+    });
+
+    var goAway = anime({
+        targets: '#slogans',
+        translateY: [0, 30],
+        opacity: [1, 0],
+        easing: 'easeInOutExpo',
+        autoplay: false,
+        complete: function (anim) {
+            $("#slogans").html(listOfSlogans[i]);
+            showUp.restart();
+        }
+    });
+
+
+
+    setInterval(function () {
+        if (i == 4)
+            i = -1;
+        goAway.restart();
+        i++;
+    }, 5500);
+})
